@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int RightToLeft = 1;
     private static final int LeftToRight = 2;
-    private static final int DURATION = 5000;
+    private static final int DURATION = 10000;
 
     private ValueAnimator mCurrentAnimator;
     private final Matrix mMatrix = new Matrix();
