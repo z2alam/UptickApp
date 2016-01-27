@@ -9,6 +9,7 @@
     <color name="purple">#251323</color>
     <color name="black">#000000</color>
     <color name="black_trans">#d0000000</color>
+    <color name="black_trans2">#60000000</color>
     <color name="hint">#a791a5</color>
     <color name="green">#606908</color>
 </resources>
