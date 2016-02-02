@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_trans"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingRight="30dp"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_tv"
+            android:text="Log in"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_tv"
+            android:text="UpTick"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/take_tour_layout"
+            android:layout_below="@+id/title_tv"
+            android:paddingTop="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/take_tour_tv"
+                android:text="Take the Tour"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/next"
+                android:id="@+id/take_tour_im"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_screen"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:id="@+id/position_tv">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="50dp"
+                    android:textStyle="bold"
+                    android:text=". "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_trans"
+                    android:textSize="50dp"
+                    android:text=". . . ."/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/get_started_layout"
+                android:layout_below="@+id/position_tv">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_started_tv"
+                    android:text="Get Started"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_text_background"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

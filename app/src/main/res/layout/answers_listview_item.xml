@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:orientation="horizontal"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:gravity="center"
+    android:id="@+id/list_item_view">
+
+    <TextView
+        android:id="@+id/answer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/answer_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/answer_title"
+        android:gravity="center"
+        android:paddingTop="10dp"/>
+
+</RelativeLayout>

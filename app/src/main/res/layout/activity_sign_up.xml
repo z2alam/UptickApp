@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallpaper">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/black_trans2">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container">
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

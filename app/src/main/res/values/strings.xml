@@ -1,4 +1,72 @@
 <resources>
     <string name="app_name">UpTick</string>
     <string name="enter_passcode">Enter your passcode</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="date_birth_hint">Date of Birth</string>
+    <string name="password_hint">Password</string>
+
+
+    <string name="kind_of_investor">What kind of investor are you?</string>
+    <string name="employment_status">What\'s your employment status?</string>
+    <string name="year_income">How much do you make in a year?</string>
+    <string name="value_of_everything">What\'s the value of everything you own, minus any debt?</string>
+    <string name="investment_time">What do you plan on using the money you invest?</string>
+
+    <string name="conservative">Conservative</string>
+    <string name="moderate">Moderate</string>
+    <string name="aggressive">Aggressive</string>
+    <string name="conservative_desc">My goal is to invest but minimize risk and preserve my money. I am comfortable accepting lower returns for more stability.</string>
+    <string name="moderate_desc">My goal is to grow my money gradually. Some risk is okay, but nothing too crazy. I\'m comfortable with moderate gains or losses.</string>
+    <string name="aggressive_desc">My goal is to grow my money as much as possible. I\'m not afraid of risk. I can afford to lose it all for a chance at big gains.</string>
+    <string name="student">Student</string>
+    <string name="unemployed">Unemployed</string>
+    <string name="retired">Retired</string>
+    <string name="employed">Employed</string>
+    <string name="under_25k">Under $25k</string>
+    <string name="bw_25k_50k">$25k - $50k</string>
+    <string name="bw_50k_100k">$50k - $100k</string>
+    <string name="over_100k">Over $100k</string>
+    <string name="under_5k">Under $5k</string>
+    <string name="bw_5k_25k">$5k - $25k</string>
+    <string name="less_than_year">Less than 1 year</string>
+    <string name="bw_2_5_years">2 - 5 years</string>
+    <string name="over_5_years">Over 5 years</string>
+
+    <string-array name="kind_of_investors_ans_titles">
+        <item>@string/conservative</item>
+        <item>@string/moderate</item>
+        <item>@string/aggressive</item>
+    </string-array>
+    <string-array name="kind_of_investors_ans_desc">
+        <item>@string/conservative_desc</item>
+        <item>@string/moderate_desc</item>
+        <item>@string/aggressive_desc</item>
+    </string-array>
+    <string-array name="employment_status_ans">
+        <item>@string/student</item>
+        <item>@string/unemployed</item>
+        <item>@string/retired</item>
+        <item>@string/employed</item>
+    </string-array>
+    <string-array name="year_income_ans">
+        <item>@string/under_25k</item>
+        <item>@string/bw_25k_50k</item>
+        <item>@string/bw_50k_100k</item>
+        <item>@string/over_100k</item>
+    </string-array>
+    <string-array name="your_value_ans">
+        <item>@string/under_5k</item>
+        <item>@string/bw_5k_25k</item>
+        <item>@string/bw_25k_50k</item>
+        <item>@string/bw_50k_100k</item>
+        <item>@string/over_100k</item>
+    </string-array>
+    <string-array name="usage_plan_ans">
+        <item>@string/less_than_year</item>
+        <item>@string/bw_2_5_years</item>
+        <item>@string/over_5_years</item>
+    </string-array>
+
 </resources>

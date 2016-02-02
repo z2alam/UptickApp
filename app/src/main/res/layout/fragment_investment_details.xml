@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_investment_details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_trans2"
+        android:id="@+id/title_action_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 2: Investment Questions"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/toolbar_title"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/question_layout"
+        android:layout_below="@+id/title_action_bar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:id="@+id/question_title"
+            android:background="@color/white_trans2"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/question_title"
+            android:id="@+id/answers_listview"
+            android:background="@color/white_trans3"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

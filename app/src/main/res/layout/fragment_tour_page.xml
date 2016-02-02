@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/black_trans2"
+        android:paddingBottom="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:paddingTop="50dp"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_tv"
+                android:text="Log in"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/page_title_tv"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/page_title_tv"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/page_description_tv"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingTop="10dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_screen"
+            android:gravity="bottom">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:id="@+id/position_tv">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_trans"
+                        android:id="@+id/page_1_dot_tv"
+                        android:textSize="50dp"
+                        android:text="."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_trans"
+                        android:id="@+id/page_2_dot_tv"
+                        android:textSize="50dp"
+                        android:text=" ."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_trans"
+                        android:textSize="50dp"
+                        android:id="@+id/page_3_dot_tv"
+                        android:text=" ."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_trans"
+                        android:id="@+id/page_4_dot_tv"
+                        android:textSize="50dp"
+                        android:text=" ."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_trans"
+                        android:id="@+id/page_5_dot_tv"
+                        android:textSize="50dp"
+                        android:text=" ."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/get_started_layout"
+                    android:layout_below="@+id/position_tv">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/get_started_tv"
+                        android:text="Get Started"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded_text_background"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

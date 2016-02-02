@@ -1,7 +1,6 @@
 package com.android.uptick.uptick;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,6 +10,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class AppWelcomeFragment extends Fragment {
@@ -22,7 +22,7 @@ public class AppWelcomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.welcome_fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_welcome, container, false);
 
         TextView tvGetStarted = (TextView) view.findViewById(R.id.get_started_tv);
         TextView tvTitle = (TextView) view.findViewById(R.id.title_tv);
@@ -39,6 +39,24 @@ public class AppWelcomeFragment extends Fragment {
         Animation shake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
         imTakeTour.startAnimation(shake);
         imTakeTour.getAnimation().setRepeatCount(1000);
+
+        LinearLayout layoutTakeTour = (LinearLayout) view.findViewById(R.id.take_tour_layout);
+        layoutTakeTour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            if (MainActivity.getViewPager() != null) {
+                MainActivity.getViewPager().setCurrentItem(1, true);
+            }
+            }
+        });
+
+        tvGetStarted.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), GetStartedActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }
