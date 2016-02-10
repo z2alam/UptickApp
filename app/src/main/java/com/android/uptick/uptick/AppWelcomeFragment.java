@@ -44,8 +44,8 @@ public class AppWelcomeFragment extends Fragment {
         layoutTakeTour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            if (MainActivity.getViewPager() != null) {
-                MainActivity.getViewPager().setCurrentItem(1, true);
+            if (StartupActivity.getViewPager() != null) {
+                StartupActivity.getViewPager().setCurrentItem(1, true);
             }
             }
         });
@@ -54,6 +54,14 @@ public class AppWelcomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity().getApplicationContext(), GetStartedActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tvLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });

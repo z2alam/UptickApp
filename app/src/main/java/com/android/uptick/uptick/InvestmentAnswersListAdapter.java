@@ -79,6 +79,12 @@ public class InvestmentAnswersListAdapter extends BaseAdapter {
                 int currPosition = GetStartedActivity.getViewPager().getCurrentItem();
                 if (currPosition < 7) {
                     GetStartedActivity.getViewPager().setCurrentItem(currPosition + 1, true);
+
+                    if (currPosition == 6) {
+                        CompletionFragment fragment = (CompletionFragment)
+                                ((GetStartedPagerAdapter) GetStartedActivity.getViewPager().getAdapter()).getRegisteredFragment(7);
+                        fragment.setTextFields();
+                    }
                 }
             }
         });

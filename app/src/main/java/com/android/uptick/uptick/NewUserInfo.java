@@ -5,18 +5,24 @@ import java.util.Date;
 public class NewUserInfo {
 
     enum KindOfInvestor {
-        NONE(-1),
-        CONSERVATIVE(0),
-        MODERATE(1),
-        AGGRESSIVE(2);
+        NONE(-1, "None"),
+        CONSERVATIVE(0, "Conservative"),
+        MODERATE(1, "Moderate"),
+        AGGRESSIVE(2, "Aggressive");
 
         private final int value;
-        KindOfInvestor(int value) {
+        private final String answer;
+        KindOfInvestor(int value, String answer) {
             this.value = value;
+            this.answer = answer;
         }
 
         public int getValue() {
             return value;
+        }
+
+        public String getString() {
+            return answer;
         }
 
         public static KindOfInvestor getEnum(int value) {
@@ -34,19 +40,25 @@ public class NewUserInfo {
     }
 
     enum Status {
-        NONE(-1),
-        STUDENT(0),
-        UNEMPLOYED(1),
-        RETIRED(2),
-        EMPLOYED(3);
+        NONE(-1, "None"),
+        STUDENT(0, "Student"),
+        UNEMPLOYED(1, "Unemployed"),
+        RETIRED(2, "Retired"),
+        EMPLOYED(3, "Employed");
 
         private final int value;
-        Status(int value) {
+        private final String answer;
+        Status(int value, String answer) {
             this.value = value;
+            this.answer = answer;
         }
 
         public int getValue() {
             return value;
+        }
+
+        public String getString() {
+            return answer;
         }
 
         public static Status getEnum(int value) {
@@ -66,19 +78,25 @@ public class NewUserInfo {
     }
 
     enum IncomeAmountRange {
-        NONE(-1),
-        UNDER_25K(0),
-        BW_25K_50K(1),
-        BW_50K_100K(2),
-        OVER_100K(3);
+        NONE(-1, "None"),
+        UNDER_25K(0, "Under $25K"),
+        BW_25K_50K(1, "Between $25K and $50K"),
+        BW_50K_100K(2, "Between $50K and $100K"),
+        OVER_100K(3, "Over $100K");
 
         private final int value;
-        IncomeAmountRange(int value) {
+        private final String answer;
+        IncomeAmountRange(int value, String answer) {
             this.value = value;
+            this.answer = answer;
         }
 
         public int getValue() {
             return value;
+        }
+
+        public String getString() {
+            return answer;
         }
 
         public static IncomeAmountRange getEnum(int value) {
@@ -98,20 +116,26 @@ public class NewUserInfo {
     }
 
     enum ValueAmountRange {
-        NONE(-1),
-        UNDER_5K(0),
-        BW_5K_25K(1),
-        BW_25K_50K(2),
-        BW_50K_100K(3),
-        OVER_100K(4);
+        NONE(-1, "None"),
+        UNDER_5K(0, "Under $5K"),
+        BW_5K_25K(1, "Between $5K and $25K"),
+        BW_25K_50K(2, "Between $25K and $50K"),
+        BW_50K_100K(3, "Between $50K and $100K"),
+        OVER_100K(4, "Over $100K");
 
         private final int value;
-        ValueAmountRange(int value) {
+        private final String answer;
+        ValueAmountRange(int value, String answer) {
             this.value = value;
+            this.answer = answer;
         }
 
         public int getValue() {
             return value;
+        }
+
+        public String getString() {
+            return answer;
         }
 
         public static ValueAmountRange getEnum(int value) {
@@ -133,18 +157,24 @@ public class NewUserInfo {
     }
 
     enum Period {
-        NONE(-1),
-        LESS_THAN_1_YEAR(0),
-        BW_2_TO_5_YEARS(1),
-        OVER_5_YEARS(2);
+        NONE(-1, "None"),
+        LESS_THAN_1_YEAR(0, "Less than 1 year"),
+        BW_2_TO_5_YEARS(1, "Between 2 to 5 years"),
+        OVER_5_YEARS(2, "Over 5 years");
 
         private final int value;
-        Period(int value) {
+        private final String answer;
+        Period(int value, String answer) {
             this.value = value;
+            this.answer = answer;
         }
 
         public int getValue() {
             return value;
+        }
+
+        public String getString() {
+            return answer;
         }
 
         public static Period getEnum(int value) {
