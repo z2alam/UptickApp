@@ -202,6 +202,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void setupChart(Stock stock) {
         mChart = (LineChart) findViewById(R.id.chart1);
+        mChart.clear();
 
         XAxis xAxis = mChart.getXAxis();
         xAxis.setTextColor(Color.WHITE);
@@ -226,18 +227,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void setData(Stock stock) {
 
-        ArrayList<String> xVals = new ArrayList<String>();
-        ArrayList<Entry> yVals = new ArrayList<Entry>();
+        ArrayList<String> xVals = new ArrayList<>();
+        ArrayList<Entry> yVals = new ArrayList<>();
 
         try {
             List<HistoricalQuote> hist = stock.getHistory();
-
             for (int i = 0; i < hist.size(); i++) {
                 xVals.add(i + "");
             }
 
             for (int i = 0; i < hist.size(); i++) {
-                yVals.add(new Entry((hist.get(i).getClose().floatValue()), i));
+                yVals.add(new Entry((hist.get(hist.size()-i-1).getAdjClose().floatValue()), i));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
         set1.setDrawValues(false);
         set1.setDrawCircles(false);
 
-        ArrayList<LineDataSet> dataSets = new ArrayList<LineDataSet>();
+        ArrayList<LineDataSet> dataSets = new ArrayList<>();
         dataSets.add(set1); // add the datasets
 
         // create a data object with the datasets
@@ -264,8 +264,7 @@ public class MainActivity extends AppCompatActivity {
         mChart.setDescriptionColor(Color.WHITE);
         mChart.setGridBackgroundColor(Color.TRANSPARENT);
 
-        // create a custom MarkerView (extend MarkerView) and specify the layout
-        // to use for it
+        // create a custom MarkerView (extend MarkerView) and specify the layout to use for it
         GraphMarker mv = new GraphMarker(this, R.layout.custom_marker_view);
         mChart.setMarkerView(mv);
 

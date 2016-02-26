@@ -6,7 +6,19 @@
     <string name="email_address_hint">Email Address</string>
     <string name="date_birth_hint">Date of Birth</string>
     <string name="password_hint">Password</string>
+    <string name="search_hint">Search Stocks</string>
 
+    <string name="your_new_brokerage_title">Your New Brokerage</string>
+    <string name="your_new_brokerage_desc">Overwhelmed with complexities in trading? UpTick provides the simplest tool to trade online. Your intuitive approach towards trading will be the correct approach in UpTick.</string>
+
+    <string name="trade_knowledge_title">Trade knowledge</string>
+    <string name="trade_knowledge_desc">First brokerage system that advices you in trading. You help us to understand your risk tolerance and investment goals, we provide you the knowledge, and recommendation of stocks from your needs. </string>
+
+    <string name="zero_commission_title">$0 Commission</string>
+    <string name="zero_commission_desc">You pay zero commission in all your trade! Other brokers charge at least $10 for every trade. UpTick removes big barriers like that. Now you won\'t hesitate in frequent buy/sell of your stocks. </string>
+
+    <string name="no_account_minimum_title">No Account Minimum</string>
+    <string name="no_account_minimum_desc">Now you can put as much money as you want. UpTick puts no condition. We want your experience to be very simple and free of barriers.</string>
 
     <string name="kind_of_investor">What kind of investor are you?</string>
     <string name="employment_status">What\'s your employment status?</string>
